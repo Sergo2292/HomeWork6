@@ -28,7 +28,7 @@ public class WeatherApp {
 
         HttpUrl forecastUrl = new HttpUrl.Builder()
                 .scheme("https")
-                .host("www.accuweather.com")
+                .host("accuweather.com")
                 .addPathSegment("/forecasts/v1/daily/5day/" + cityID)
                 .query("apikey=" + apiKey)
                 .build();
